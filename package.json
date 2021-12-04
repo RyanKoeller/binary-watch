@@ -1,0 +1,35 @@
+{
+  "name": "binary-watch",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~6.0.2",
+    "@fitbit/sdk-cli": "^1.7.3",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "^8.3.0",
+    "fitbit-sdk-types": "^7.0.4"
+  },
+  "fitbit": {
+    "appUUID": "71a1df05-8b4d-4b40-8e13-d0ea894635bf",
+    "appType": "clockface",
+    "appDisplayName": "Binary Watch",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  },
+  "dependencies": {
+    "tslib": "^2.3.1"
+  }
+}

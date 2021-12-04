@@ -1,0 +1,22 @@
+.defaultText {
+  font-size: 30;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-anchor: middle;
+  text-length: 4;
+  fill: white;
+}
+
+.background {
+  viewport-fill: black;
+  width: 100%;
+  height: 100%;
+}
+
+.off {
+  fill: grey;
+}
+
+.on {
+  fill: red;
+}

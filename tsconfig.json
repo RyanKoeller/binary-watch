@@ -1,0 +1,10 @@
+{
+  "extends": "./node_modules/@fitbit/sdk/sdk-tsconfig.json",
+  "compilerOptions": {
+    // ...rest of compiler options
+    "baseUrl": ".",
+    "paths": {
+      "tslib" : ["./node_modules/tslib/tslib.d.ts"]
+    }
+  }
+}
