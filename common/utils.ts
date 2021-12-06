@@ -16,7 +16,7 @@ export function zeroPad(num) {
  * @param size Number of digits the number should display
  * @returns The binary with desired length
  */
-export function padBinary(num: string, size: number): string {
+export function zeroPadBinary(num: string, size: number): string {
     while (num.length < size) {
         num = "0" + num;
     }

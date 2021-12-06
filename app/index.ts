@@ -72,15 +72,15 @@ function updateClock(hours: number, minutes: number, seconds: number): void {
  * @param bitTensIds Ids of the tens place elements
  */
 function triggerClockLights(num: number, bitOnesIds: string[], bitTensIds: string[]): void {
-    // pad, separate, and fix the digits
+    // pad, separate, and pad the digits again
     // example: 7 -> 07 -> 0 7 -> 0 111 -> 00 0111
     const padNum: string = util.zeroPad(num.toString());
     const onesDigit: string = padNum[1];
     const tensDigit: string = padNum[0];
     const onesDigitBinary: string = (+onesDigit).toString(2);
     const tensDigitBinary: string = (+tensDigit).toString(2);
-    const padOnesDigitBinary: string = util.padBinary(onesDigitBinary, bitOnesIds.length);
-    const padTensDigitBinary: string = util.padBinary(tensDigitBinary, bitTensIds.length);
+    const padOnesDigitBinary: string = util.zeroPadBinary(onesDigitBinary, bitOnesIds.length);
+    const padTensDigitBinary: string = util.zeroPadBinary(tensDigitBinary, bitTensIds.length);
 
     // change the class of the bit elements to "on" or "off"
     changeBitsOnOrOff(padOnesDigitBinary, bitOnesIds);
