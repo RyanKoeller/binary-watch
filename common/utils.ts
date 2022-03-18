@@ -1,7 +1,7 @@
 /**
  * Add zero in front of numbers < 10
  * @param num Decimal number to pad
- * @returns Padded decial number
+ * @returns Padded decimal number
  */
 export function zeroPad(num) {
     if (num < 10) {
